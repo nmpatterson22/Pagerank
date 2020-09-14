@@ -1,7 +1,9 @@
 # Pagerank
-#This is an iteration of Pagerank utilized in Deeper Inside Pagerank 
+This is an iteration of Pagerank utilized in Deeper Inside Pagerank 
 
 #Task 1
+
+```
 montypatterson@Montys-MacBook-Pro-2 ~ % python /Users/montypatterson/Desktop/working_pagerank.py --data=/Users/montypatterson/Desktop/lawfareblog\ \(1\).csv.gz --verbose
 DEBUG:root:computing indices
 DEBUG:root:computing values
@@ -15,8 +17,9 @@ INFO:root:rank=6 pagerank=8.4183e+00 url=www.lawfareblog.com/topics
 INFO:root:rank=7 pagerank=8.4183e+00 url=www.lawfareblog.com/our-comments-policy
 INFO:root:rank=8 pagerank=8.4183e+00 url=www.lawfareblog.com/upcoming-events
 INFO:root:rank=9 pagerank=8.4183e+00 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
+```
 
-#Utilizing a verbose flag this is ranking URL's 
+Utilizing a verbose flag this is ranking URL's 
 
 #Part 2
 #This function utilizes the same power method to read in URL's as string as a parameter
