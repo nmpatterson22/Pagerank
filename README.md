@@ -1,7 +1,7 @@
-# Pagerank
+##*Pagerank*
 #This is an iteration of Pagerank utilized in Deeper Inside Pagerank 
 
-#Task 1
+##Task 1
 montypatterson@Montys-MacBook-Pro-2 ~ % python /Users/montypatterson/Desktop/working_pagerank.py --data=/Users/montypatterson/Desktop/lawfareblog\ \(1\).csv.gz --verbose
 DEBUG:root:computing indices
 DEBUG:root:computing values
@@ -44,8 +44,8 @@ INFO:root:rank=7 pagerank=1.0464e-02 url=www.lawfareblog.com/cyberlaw-podcast-re
 INFO:root:rank=8 pagerank=1.0223e-02 url=www.lawfareblog.com/getting-drop-cyberspace
 INFO:root:rank=9 pagerank=9.9394e-03 url=www.lawfareblog.com/achieving-and-maintaining-cyberspace-superiority-cyber-command-and-interagency-legal-conference
 
-#List Largest Pagerank.
- montypatterson@Montys-MacBook-Pro-2 ~ % python /Users/montypatterson/Desktop/working_pagerank.py --data=/Users/montypatterson/Desktop/lawfareblog\ \(1\).csv.gz                       
+##List Largest Pagerank.
+#montypatterson@Montys-MacBook-Pro-2 ~ % python /Users/montypatterson/Desktop/working_pagerank.py --data=/Users/montypatterson/Desktop/lawfareblog\ \(1\).csv.gz                     
 INFO:root:rank=0 pagerank=8.4183e+00 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
 INFO:root:rank=1 pagerank=8.4183e+00 url=www.lawfareblog.com/lawfare-job-board
 INFO:root:rank=2 pagerank=8.4183e+00 url=www.lawfareblog.com/documents-related-mueller-investigation
@@ -86,7 +86,8 @@ INFO:root:rank=7 pagerank=1.6384e+00 url=www.lawfareblog.com/congress-us-policy-
 INFO:root:rank=8 pagerank=1.5597e+00 url=www.lawfareblog.com/summary-david-holmess-deposition-testimony
 INFO:root:rank=9 pagerank=9.1265e-01 url=www.lawfareblog.com/events
 
-#Part 4 
+----
+##Part 4 
 #Utilizing Task 4 montypatterson@Montys-MacBook-Pro-2 ~ % python /Users/montypatterson/Desktop/working_pagerank.py --data=/Users/montypatterson/Desktop/lawfareblog\ \(1\).csv.gz --verbose --alpha=0.9999    
 #Alpha is acting as a convergence filter
 DEBUG:root:computing indices
@@ -102,6 +103,7 @@ INFO:root:rank=7 pagerank=1.0190e+01 url=www.lawfareblog.com/our-comments-policy
 INFO:root:rank=8 pagerank=1.0190e+01 url=www.lawfareblog.com/upcoming-events
 INFO:root:rank=9 pagerank=1.0190e+01 url=www.lawfareblog.com/topics
 
+----
 montypatterson@Montys-MacBook-Pro-2 ~ % python /Users/montypatterson/Desktop/working_pagerank.py --data=/Users/montypatterson/Desktop/lawfareblog\ \(1\).csv.gz --verbose --filter_ratio=0.2 --alpha=0.9999
 DEBUG:root:computing indices
 DEBUG:root:computing values
@@ -116,6 +118,7 @@ INFO:root:rank=7 pagerank=1.0792e+00 url=www.lawfareblog.com/water-wars-disjoint
 INFO:root:rank=8 pagerank=1.0792e+00 url=www.lawfareblog.com/water-wars-song-oil-and-fire
 INFO:root:rank=9 pagerank=1.0792e+00 url=www.lawfareblog.com/water-wars-sinking-feeling-philippine-china-relations
 
+------
 ##TASK 2 Personalization Vector 
 #The Personalization Vector Methodmontypatterson@Montys-MacBook-Pro-2 ~ % python /Users/montypatterson/Desktop/working_pagerank.py --data=/Users/montypatterson/Desktop/lawfareblog\ \(1\).csv.gz --personalization_vector_query='iran'     
 INFO:root:rank=0 pagerank=1.0370e+00 url=www.lawfareblog.com/lawfare-job-board
@@ -129,6 +132,7 @@ INFO:root:rank=7 pagerank=1.0370e+00 url=www.lawfareblog.com/masthead
 INFO:root:rank=8 pagerank=1.0370e+00 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
 INFO:root:rank=9 pagerank=1.0370e+00 url=www.lawfareblog.com/documents-related-mueller-investigation
 #Personalization Vector string was 'Iran"
+-------
 
 #Part 2
 #Searches terms using both personalization vector + search term, meaning that it only displays webpages with corona importance but not those that mention corona
@@ -144,7 +148,8 @@ INFO:root:rank=7 pagerank=2.7263e-02 url=www.lawfareblog.com/trump-right-britain
 INFO:root:rank=8 pagerank=2.7263e-02 url=www.lawfareblog.com/house-oversight-committee-questions-government-response-coronavirus
 INFO:root:rank=9 pagerank=2.7174e-02 url=www.lawfareblog.com/lessons-america-how-south-korean-authorities-used-law-fight-coronavirus
 
-#Experimentation with search term iran
+----
+##Experimentation with search term iran
 montypatterson@Montys-MacBook-Pro-2 ~ % python /Users/montypatterson/Desktop/working_pagerank.py --data=/Users/montypatterson/Desktop/lawfareblog\ \(1\).csv.gz --personalization_vector_query='iran' --search_query='iran'   
 INFO:root:rank=0 pagerank=5.7547e-02 url=www.lawfareblog.com/cyber-command-operational-update-clarifying-june-2019-iran-operation
 INFO:root:rank=1 pagerank=5.5730e-02 url=www.lawfareblog.com/aborted-iran-strike-fine-line-between-necessity-and-revenge
